@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class CustomAdapter extends ArrayAdapter {
@@ -34,6 +36,7 @@ public class CustomAdapter extends ArrayAdapter {
         TextView tvTitle = rowView.findViewById(R.id.tV1);
         TextView tvSingers = rowView.findViewById(R.id.tV2);
         TextView tvStars = rowView.findViewById(R.id.tV3);
+        TextView tvYear = rowView.findViewById(R.id.tV4);
 
 
 
@@ -56,6 +59,7 @@ public class CustomAdapter extends ArrayAdapter {
         tvTitle.setText(currentSongs.getTitle());
         tvSingers.setText(currentSongs.getSingers());
         tvStars.setText(starsStr);
+        tvYear.setText(String.valueOf(currentSongs.getYear()));
 
         //<a href="https://www.flaticon.com/free-icons/music" title="music icons">Music icons created by Freepik - Flaticon</a>
 
